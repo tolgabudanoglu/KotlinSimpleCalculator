@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }catch (e:Exception){
-            Toast.makeText(this@MainActivity,e.message,Toast.LENGTH_LONG).show()
+            Toast.makeText(this@MainActivity,e.message,Toast.LENGTH_SHORT).show()
         }
     }
 }
