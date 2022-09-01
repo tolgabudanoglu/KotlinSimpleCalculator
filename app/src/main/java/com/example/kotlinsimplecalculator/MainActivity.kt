@@ -36,6 +36,9 @@ class MainActivity : AppCompatActivity() {
         btnRightB.setOnClickListener { appendOnClick(false, ")") }
 
 
+        btnBackSpaceClear.setOnClickListener{
+            backSpaceAction()
+        }
         btnClear.setOnClickListener {
             clear()
         }
@@ -65,6 +68,12 @@ class MainActivity : AppCompatActivity() {
         tvInput.text = ""
         tvOutput.text = ""
 
+    }
+    fun backSpaceAction()
+    {
+        val length = tvInput.length()
+        if(length > 0)
+            tvInput.text = tvInput.text.subSequence(0, length - 1)
     }
 
     private fun calculate() {

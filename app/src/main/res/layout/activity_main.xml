@@ -40,20 +40,32 @@
 
         android:orientation="vertical">
 
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:background="@color/almostBlack"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnClear"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/almostBlack"
                 android:stateListAnimator="@null"
                 android:text="C"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                app:rippleColor="#9C2121" />
+            <Button
+                android:id="@+id/btnBackSpaceClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/almostBlack"
+                android:stateListAnimator="@null"
+                android:text="⌫"
                 android:textColor="@color/red"
                 android:textSize="16sp"
                 app:rippleColor="#9C2121" />
@@ -90,6 +102,8 @@
                 android:text="/"
                 android:textColor="@color/orange"
                 android:textSize="16sp" />
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -308,5 +322,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </LinearLayout>
